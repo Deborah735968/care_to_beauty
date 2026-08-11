@@ -33,8 +33,6 @@ const fetchData = {
        products = data.products;
         console.log(products);
 
-        
-
        
         if (featuredProducts){
    
