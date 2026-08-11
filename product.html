@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-   <div class="bg-[#FFF7EB] relative pt-32 md:pt-24 h-[500px] sm:h-[600px] lg:h-[700px] overflow-hidden">
+   <div class="bg-[#FFF7EB] relative pt-32 md:pt-24 overflow-hidden">
      <nav class="fixed top-0 left-0 w-full z-50 bg-[#482C2E] ">
          <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between px-4 py-4 gap-4">
 
@@ -26,14 +26,11 @@
 
 
             
-          <!-- <ul class="hidden md:flex gap-8 text-sm text-[#FFF7EB]">
-            <li><a href="product.html" class="hover:text-[#FFF7EB] duration-300">Products</a></li>
-             <li><a href="cart.html" class="hover:text-[#FFF7EB] duration-300"><i class="fa-solid fa-cart-arrow-down"></i>Cart</a></li>
-          </ul>   -->
-          <ul class="hidden md:flex gap-8 text-sm text-[#FFF7EB]">
+         
+          <ul class="sm:flex md:flex gap-8 text-sm text-[#FFF7EB]">
             <li><a href="product.html" class="hover:text-[#FFF7EB] duration-300">Products</a></li>
              <!-- <li><a href="cart.html" class="hover:text-[#FFF7EB] duration-300"><i class="fa-solid fa-cart-arrow-down"></i>Cart</a></li> -->
-              <a href="cart.html" class="relative inline-flex flex-col items-center">
+              <a href="cart.html" class="relative inline-flex flex-col mt-4 items-center">
     <span class="relative">
         <i class="fa-solid fa-cart-arrow-down"></i>Cart
         <span 
@@ -51,8 +48,8 @@
     </nav>
 
     <div class="bg-[#FFF7EB]">
-    <h3 class="text-2xl text-[#482C2E] text-center font-serif font-bold ">Featured Products</h3>
-    <div id="featuredProducts" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 item-stretch"></div>
+    <h3 class="text-2xl text-[#482C2E] text-center font-serif font-bold pt-6 ">Featured Products</h3>
+    <div id="featuredProducts" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 item-stretch "></div>
    </div>
 
 
