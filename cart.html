@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body >
+   <div class="bg-[#FFF7EB] relative pt-32 md:pt-24  overflow-hidden">
+     <nav class="fixed top-0 left-0 w-full z-50 bg-[#482C2E] ">
+         <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between px-4 py-4 gap-4">
+
+             <img src="./Images/logo.svg" alt="" class="w-28">
+            <div class="relative order-3 w-full md:w-[350px] lg:w-[370px] md:order-none text-[#FF8B72] ">
+                
+                <input type="text" placeholder="Search luxury products..." class="w-full  bg-[#FFF7EB]
+                rounded-full py-3 pl-5 pr-20 outline-none text-[#482C2E]
+                " id="checkInput">
+                <button onclick="checkProducts" class="absolute right-2 top-2 px-4 h-9 rounded-full text-[#FFF7EB] bg-[#482C2E]" id="searchBtn">
+                   Search
+                </button> 
+            </div>
+          
+          <ul class="hidden md:flex gap-8 text-sm text-[#FFF7EB]">
+            <li><a href="product.html" class="hover:text-[#FFF7EB] duration-300">Products</a></li>
+              <a href="cart.html" class="relative inline-flex flex-col items-center">
+    <span class="relative">
+        <i class="fa-solid fa-cart-arrow-down"></i>Cart
+        <span 
+            id="cartNo"
+            class="absolute -top-3 -right-3 bg-orange-500 text-white text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center"
+        >
+            0
+        </span>
+    </span>
+</a>
+          </ul>  
+
+    </nav>
+    
+    <div class="max-w-3xl mx-auto sm:max-w-full pl-5 pr-4 lg:max-w-full pl-5 pr-4">
+        <h1 class="text-2xl font-bold text-[#482C2E] pb-8 pt-4 text-center">Cart</h1>
+        <div id="cartPages" class="space-y-4 "></div> 
+        <div class="mt-12 pt-8">
+        <div class="flex justify-between mb-4">
+            <span>Subtotal:</span>
+            <span id="subtotal">$0.00</span>
+        </div>
+        <div class="border-t pt-6 flex justify-between text-xl font-bold">
+            <span>Cart Total</span>
+            <span id="totalPrice">$0.00</span>
+        </div>
+        <button class="w-full mt-6 mb-4 border border-[#482C2E] rounded-full py-4 text-[#482C2E] hover:[#482C2E] hover-text:[#F1E3CC] transition">
+        Checkout
+            
+        </button>
+  
+        </div>
+        
+    </div>
+ 
+
+
+   
+    
+
+
+    <script src="script.js"></script>
+    </body>
+</html>

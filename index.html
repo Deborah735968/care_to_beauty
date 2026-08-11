@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body >
+   <div class="bg-[#FFF7EB] relative pt-32 md:pt-24 h-[500px] sm:h-[600px] lg:h-[700px] overflow-hidden">
+     <nav class="fixed top-0 left-0 w-full z-50 bg-[#482C2E] ">
+         <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between px-4 py-4 gap-4">
+
+             <img src="./Images/logo.svg" alt="" class="w-28">
+            <div class="relative order-3 w-full md:w-[350px] lg:w-[370px] md:order-none text-[#FF8B72] ">
+                
+                <input type="text" placeholder="Search luxury products..." class="w-full  bg-[#FFF7EB]
+                rounded-full py-3 pl-5 pr-20 outline-none text-[#482C2E]
+                " id="checkInput">
+                <button class="absolute right-2 top-2 px-4 h-9 rounded-full text-[#FFF7EB] bg-[#482C2E]" id="searchBtn">
+                   Search
+                </button> 
+            </div>
+            
+          <ul class="hidden md:flex gap-8 text-sm text-[#FFF7EB]">
+            <li><a href="product.html" class="hover:text-[#FFF7EB] duration-300">Products</a></li>
+             <!-- <li><a href="cart.html" class="hover:text-[#FFF7EB] duration-300"><i class="fa-solid fa-cart-arrow-down"></i>Cart</a></li> -->
+              <a href="cart.html" class="relative inline-flex flex-col items-center">
+    <span class="relative">
+        <i class="fa-solid fa-cart-arrow-down"></i>Cart
+        <span 
+            id="cartNo"
+            class="absolute -top-3 -right-3 bg-orange-500 text-white text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center"
+        >
+            0
+        </span>
+    </span>
+   
+
+</a>
+          </ul>  
+        
+    </nav>
+
+    <div class="min-h-screen flex items-center overflow-hidden">
+       <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 items-center px-4 md:px-8">
+        <div>
+            <h1 class="text-3xl mt-6 md:text-5xl font-semibold text-[#482C2E]">Elevate <br>Your Beauty
+            <span class="text-[#482C2E]">Experience</span></h1>
+            <p class="text-[#482C2E] mt-8 text-lg max-w-lg">
+                Discover premium skincare, makeup, luxury fragrances and beauty essentials
+                crafted for confidence and elegance.
+            </p>
+            <div class="flex pt-14 pb-24">
+                <button class="bg-[#482C2E] hover:bg-[#482C2E] duration-300 text-[#F1E3CC] px-6 py-4 sm:mb-20 rounded-xl font-semibold">
+                    Shop Now
+                </button>
+                
+            </div> 
+        </div>
+           <div class="relative w-full rounded-lg">
+        
+             <img src="./Images/btm-homepage-img (1).webp" alt="" class="w-full h-82 md:h-[65vh] rounded-xl object-cover mb-30">
+            
+
+           </div>
+
+    </div>
+</div>
+
+</div>
+
+ <div class="max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-8 sm:mt-6 gap-2 mt-8 ">
+    <div class="w-20 text-center">
+        <img src="./Images/sunscreen.avif" alt=""  class="w-20 h-19 rounded-full transition duration-500 hover:scale-110 ">
+        <h1 class="text-[#482C2E] text-sm font-bold relative left-0 mb-3">Sunscreen</h1>
+    </div>
+    <div class="w-20 text-center">
+        <img src="./Images/Sale.avif" alt=""  class="w-20 h-19 rounded-full transition duration-500 hover:scale-110 ">
+        <h1 class="text-[#482C2E] text-sm font-bold relative left-0 mb-3 ">Sale</h1>
+    </div>
+    <div class="w-20 text-center">
+        <img src="./Images/New_In.avif" alt=""  class="w-20 h-19 rounded-full transition duration-500 hover:scale-110 ">
+        <h1 class="text-[#482C2E] text-sm font-bold relative left-0 mb-3">New</h1>
+    </div>
+    <div class="w-20 text-center">
+        <img src="./Images/Korean.avif" alt="" class="w-20 h-19 rounded-full transition duration-500 hover:scale-110 ">
+        <h1 class="text-[#482C2E] text-sm font-bold relative left-0 mb-3">K-beauty</h1>
+    </div>
+    <div class="w-20 text-center">
+        <img src="./Images/Skincare_summer.avif" alt=""  class="w-20 h-19 rounded-full transition duration-500 hover:scale-110 ">
+        <h1 class="text-[#482C2E] text-sm font-bold relative left-0 mb-3">Skincare</h1>
+    </div>
+    <div class="w-20 text-center">
+        <img src="./Images/Bodycare.avif" alt="" class="w-20 h-19 rounded-full transition duration-500 hover:scale-110 ">
+        <h1 class="text-[#482C2E] text-sm font-bold relative left-0 mb-3">Body</h1>
+    </div>
+    <div class="w-20 text-center">
+        <img src="./Images/Hair.avif" alt="" class="w-20 h-19 rounded-full transition duration-500 hover:scale-110 ">
+        <h1 class="text-[#482C2E] text-sm font-bold relative left-0 mb-3">Hair</h1>
+    </div>
+    <div class="w-20 text-center">
+        <img src="./Images/Makeup.avif" alt="" class="w-20 h-19 rounded-full transition duration-500 hover:scale-110 ">
+        <h1 class="text-[#482C2E] text-sm font-bold relative left-0 mb-3">Makeup</h1>
+    </div>
+ 
+</div>
+   
+
+    <div class="bg-[#FFF7EB] pt-10">
+    <h3 class="text-2xl text-[#482C2E] text-center font-serif font-bold ">Featured Products</h3>
+    <div id="featuredProducts" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 px-4 md:px-10 py-8"></div>
+   </div>
+
+   <div class="bg-[#E9D7BA] pt-10">
+    <h1 class="text-[#482C2E] text-center justify-center text-2xl  font-serif font-bold">About Us</h1>
+     <div class="text-center pt-2">
+    <p class="max-w-4xl mx-auto px-4 text-center leading-8 [#482C2E] text-lg font-serif">Beauty is more than a routine, it's a form of self expression. 
+    Explore our exclusive collection of skincare and makeup products designed to help you look radiant,
+feel confident,  and embrace your unique beauty. 
+Experience exceptional quality with products you will love using every day. 
+From nourishing skincare essentials to beautifully crafted makeup, 
+every item in our collection is thoughtfully selected  to enhance your natural glow and elevate 
+ your everyday routine. Whether you are creating a simple everyday look or preparing  for a special occasion,
+ discover beauty products that combine elegance, innovation, and lasting performance. 
+Let every purchase bring you one step closer to feeling your most confident, beautiful, and empowered self.
+
+</p>
+    <button class="bg-[#482C2E] text-[#F1E3CC] px-3 py-2 mt-2 rounded-xl mb-2 font-semibold ">Explore Collection</button>
+
+   </div>
+ 
+    <div class="pt-10 bg-[#E9D7BA] pl-6 ">
+        <marquee behavior="scroll" direction="left" class="grid grid-cols-5 mt-">
+        <div class="flex gap-4 sm:gap-6 px-5 sm:px-8 w-max">
+            <div  class="min-w-[180px] h-20 bg-white rounded-2xl flex items-center justify-center">
+                <img src="./Images/acm-laboratoire.svg" alt="" w-64>
+            </div>
+             <div  class="min-w-[180px] h-20 bg-white rounded-2xl flex items-center justify-center">
+                <img src="./Images/avene.svg" alt="" w-64>
+            </div>
+             <div  class="min-w-[180px] h-20 bg-white rounded-2xl flex items-center justify-center">
+                <img src="./Images/bioderma_5.svg" alt="" w-64>
+            </div>
+             <div  class="min-w-[180px] h-20 bg-white rounded-2xl flex items-center justify-center">
+                <img src="./Images/caudalie.svg" alt="" w-64>
+            </div>
+             <div  class="min-w-[180px] h-20 bg-white rounded-2xl flex items-center justify-center">
+                <img src="./Images/cerave_2.svg" alt="" w-64>
+            </div>
+             <div  class="min-w-[180px] h-20 bg-white rounded-2xl flex items-center justify-center">
+                <img src="./Images/clarins.svg" alt="" w-64>
+            </div>  
+        </div>
+    </div>
+</marquee>
+</div>
+
+<!-- 
+
+<div class="bg-[#FFF7EB] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6">
+    <div class="text-[#482C2E] font-serif">
+       <img src="./Images/Esthederm_Intensive_NAD_.avif" alt="" class="rounded-xl mt-8 w-full h-72 md:h-80 lg:h-96 object-cover">
+       <h1 class="text-2xl mb-2">Esthederm Intensive NAD</h1>
+       <p >Niacinamide & NAD + Booster to <br> improve skin quality</p>
+    </div>
+
+    <div class="text-[#482C2E] font-serif">
+       <img src="./Images/Scalp_Reset.avif" alt="" class="rounded-xl mt-8 w-full h-72 md:h-80 lg:h-96 object-cover">
+       <h1 class="text-2xl mb-2">Scalp Reset</h1>
+       <p>Hair detox essentials to clear build-up, <br> pollution, and scalp impurities</p>
+    </div>
+
+    <div class="text-[#482C2E] font-serif">
+       <img src="./Images/Press-On_Nails.avif" alt="" class="rounded-xl mt-8 w-full h-72 md:h-80 lg:h-96 object-cover">
+       <h1 class="text-2xl mb-2">Press On Nails</h1>
+       <p>Salon-worthy nails in minutes, no <br> polish or dying time required</p>
+    </div>
+
+    <div class="text-[#482C2E] font-serif">
+       <img src="./Images/Erborian_Hydra.avif" alt="" class="rounded-xl mt-8 w-full h-72 md:h-80 lg:h-96 object-cover">
+       <h1 class="text-2xl mb-2"> Erborian Hydra</h1>
+       <p> "Glass Skin" hydration with four <br> hyaluronic acids and korean snow mushroom</p>
+    </div>
+
+</div> -->
+
+
+<div class="bg-[#E9D7BA] text-[#482C2E] pl-10">
+
+
+   <div class=" pt-10">
+    <h1 class="text-[#482C2E] text-center text-2xl  font-serif font-bold">Customers Review</h1>
+   </div>
+
+
+  
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-2 px-">
+            <div class="bg-[#E9D7BA] p-3 rounded-xl mt-5 shadow-2xl">
+               <h1 class="text-[#482C2E] font-bold">Sophia M.</h1>
+               <P class="text-sm text-[#482C2E] leading-7">The quality completely amazed me. <br> My skin feels smother, healthier,<br> and more radiant after a few uses.</P>
+                
+
+            </div>
+
+            <div class="bg-[#E9D7BA] p-3 rounded-xl  mt-5 shadow-2xl">
+               <h1 class="text-[#482C2E] font-bold">Olivia J.</h1>
+               <P class="text-sm text-[#482C2E] leading-7">Beautiful packaging, fast delivery, <br> and amazing products. <br> I will definitely be ordering again!.</P>
+                
+
+            </div>
+             <div class="bg-[#E9D7BA] p-3 rounded-xl mt-5 shadow-2xl">
+               <h1 class="text[#482C2E] font-bold">Emily R.</h1>
+               <P class="text-sm text-[#482C2E] leading-7">The skincare products are effective, <br> and worth every penny.  <br> My daily routine has never felt this good.</P>
+                
+
+            </div>
+
+             <div class="bg-[#E9D7BA] p-3 rounded-xl  mt-5 shadow-2xl">
+               <h1 class="text-[#482C2E] font-bold">Mary A.</h1>
+               <P class="text-sm text-[#482C2E] leading-7">I absolutely love the makeup <br>collection.  it blends perfectly and <br> lasts all day without feeling heavy. </P>
+                
+
+            </div>
+
+            <div class="bg-[#E9D7BA] p-3 rounded-xl  mt-5 shadow-2xl">
+               <h1 class="text-[#482C2E] font-bold">Sarah W.</h1>
+               <P class="text-sm text-[#482C2E] leading-7">Every products I've purchased <br> has been oustanding.The <br> attention to quality  really shows</P> 
+                
+
+            </div>
+
+            <div class="bg-[#E9D7BA] p-3 rounded-xl mt-5 shadow-2xl">
+               <h1 class="text-[#482C2E] font-bold">Jessica A.</h1>
+               <P class="text-sm text-[#482C2E] leading-7">I absolutely love the makeup <br>collection.  it blends perfectly and <br> lasts all day without feeling heavy. </P>
+                
+
+            </div>
+
+        
+
+    </div>
+   
+   </div>
+
+ 
+  
+
+  <footer class="bg-[#FFF7EB] text-[#482C2E] py-8 gap-6">
+
+    <h1 class=" text-[#482C2E] font-bold font-serif text-2xl text-center justify-center">Learn More About Us</h1><br><br>
+
+
+      
+  <div class="max-w-7xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-6">
+       <div>
+        <p class="text-3xl font-semibold font-serif pb-2">
+            Let’s do it together</p>
+                    <div class="text-sm font-serif">
+                        <a href="#">Careers</a><br>
+                    <a href="#">Beauty for Partners</a><br>
+                    <a href="#">Couriers</a><br>
+                    </div>
+       </div>
+
+       <div>
+        <p class="text-3xl font-semibold font-serif pb-2">Links of interest</p><br>
+                    <div class="text-sm font-serif">
+                    <a href="#">About us</a><br>
+                    <a href="#">FAQ</a><br>
+                    <a href="#">Glovo prime</a><br>
+                    <a href="#">Blog</a><br>
+                    <a href="#">Contact us</a><br>
+                    <a href="#">Security</a><br>
+                    <a href="#">Log in</a><br>
+                    </div>
+       </div>
+       <div>
+        <p class="text-3xl font-semibold font-serif pb-2">Follow us</p><br>
+                   <div class="text-sm font-serif">
+                     <a href="#">Instagram</a><br>
+                    <a href="#">TikTok</a><br>
+                   </div>
+       </div>
+       <div>
+
+        <div>
+            <button>
+                <img src="./Images/Google play.svg" alt="">
+            </button><br><br>
+            <button>
+                <img src="./Images/stores app.svg" alt="">
+            </button>
+        </div>
+                  <div class="text-sm font-serif">
+                     <a href="#">Terms and conditions</a><br>
+                    <a href="#">Privacy Policy</a><br>
+                    <a href="#">Cookies Policy</a><br>
+                    <a href="#">Compliance</a><br>
+                    <a href="#">Configues the cookies</a><br>
+                    <a href="#">Digital services act</a> <br>
+                    <a href="#">Europeans Accesibility</a><br>
+                    <a href="#">Act</a>
+        
+                  </div>
+       </div>
+        </div>
+
+            <div class="pl-10">
+                <h2 class="text-2xl font-serif">Top categories: Nigeria</h2>
+                <div class="text-sm font-serif flex gap-3">
+                <a href="#">Sunscreen</a>
+                <a href="#">Sale</a>
+                <a href="#">New</a>
+                <a href="#">Makeup</a><br><br>
+            
+                
+                </div>
+                <div  class=" border-[#482C2E] w-60 h-9 border">
+                <select>
+                    <option value="">English</option>
+                    <option value="">Spanish</option>
+                    <option value="">French</option>
+                </select>
+               </div>
+
+       
+      
+    </footer>
+
+
+   
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
