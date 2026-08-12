@@ -32,6 +32,71 @@ const fetchData = {
 
        products = data.products;
         console.log(products);
+        const searchInput = document.getElementById("checkInput");
+const searchBtn = document.getElementById("searchBtn");
+
+searchBtn.addEventListener("click", function () {
+
+    const searchValue = searchInput.value.toLowerCase().trim();
+
+    const searchResults = products.filter(function(item) {
+        return item.title.toLowerCase().includes(searchValue);
+    });
+
+    if (featuredProducts) {
+
+        featuredProducts.innerHTML = searchResults.map(function(value) {
+            return `
+                <div class="bg-[#F1E3CC] p-8 shadow rounded-lg relative overflow-hidden mt-8 flex flex-col">
+
+                    <img 
+                        src="${value.thumbnail}"
+                        alt="${value.title}"
+                        class="h-40 w-40 object-contain rounded-full mb-3 transition duration-500 hover:scale-110 bg-[#F1E3CC] border border-[#482C2E]/50"
+                    >
+
+                    <span class="absolute left-30 top-8 bg-[#482C2E] font-bold text-[#F1E3CC] px-2 py-1 rounded">
+                        -${value.discountPercentage}%
+                    </span>
+
+                    <h4 class="text-lg mt-3 relative left-6 text-[#482C2E]">
+                        ${value.title}
+                    </h4>
+
+                    <p class="text-yellow-400 relative left-5">
+                        ${getStars(value.rating)}
+                        <span class="text-[#482C2E]">${value.rating}</span>
+                    </p>
+
+                    <p class="text-[#482C2E] font-bold relative left-10 mt-2">
+                        $${value.price}
+                    </p>
+
+                    <div id="cartBtn-${value.id}" class="mt-auto">
+                        <button 
+                            onclick="event.stopPropagation(); addToCart(${value.id})"
+                            class="bg-[#482C2E] text-[#F1E3CC] font-bold text-sm px-2 py-1 rounded mt-2 relative justify-center w-full"
+                        >
+                            <i class="fa-solid fa-cart-arrow-down"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+
+                </div>
+            `;
+        }).join("");
+
+    
+        if (searchResults.length === 0) {
+            featuredProducts.innerHTML = `
+                <p class="col-span-full text-center text-[#482C2E] text-lg font-semibold">
+                    No product found.
+                </p>
+            `;
+        }
+    }
+});
+
 
        
         if (featuredProducts){
